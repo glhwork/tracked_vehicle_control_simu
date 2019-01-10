@@ -1,0 +1,7 @@
+function [dx, dy, d_yaw] = GetDeltaPosi(speed_left, speed_right, dt)
+    
+    disp
+    delta_v_linear =
+    
+
+end
