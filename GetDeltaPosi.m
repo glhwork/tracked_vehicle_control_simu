@@ -6,8 +6,8 @@ function [dx, dy, d_yaw] = GetDeltaPosi(speed_left, speed_right, dt, robot_confi
     dist_delta = (dist_l_delta + dist_r_delta) / 2;
     yaw_delta = (dist_r_delta - dist_l_delta) / (2 * robot_config(1));
     
-    d_yaw = yaw_delta;
-    dx = cos(d_yaw) * dist_delta;
-    dy = sin(d_yaw) * dist_delta;    
+    d_yaw = -yaw_delta;
+    dy = cos(d_yaw) * dist_delta;
+    dx = sin(d_yaw) * dist_delta;    
 
 end

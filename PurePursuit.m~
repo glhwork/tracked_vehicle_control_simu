@@ -2,7 +2,6 @@ function [speed_left, speed_right] = PurePursuit(pose, path_x, path_y, robot_con
     
     k_v = 200;
     k_ld = 5;
-    vThreshold = 200;
     
     L = robot_config(1) * 2;
     position = [pose(1,end), pose(2,end)];
@@ -13,7 +12,7 @@ function [speed_left, speed_right] = PurePursuit(pose, path_x, path_y, robot_con
     v = k_v * r_dist;
     
     if (v > vThreshold)
-        v = vThreshold;
+        v = 200;
     end
     if (r_dist < 30)
         v = 0;
