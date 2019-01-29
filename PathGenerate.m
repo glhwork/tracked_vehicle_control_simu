@@ -2,8 +2,8 @@ function [path_x, path_y] = PathGenerate(position, goal)
 
     inter_point = [position(1), goal(2)];
     
-    seg1_num = 50;
-    seg2_num = 30;
+    seg1_num = 100;
+    seg2_num = 80;
     
     %% set value of the first segment of path
     seg1_step = abs(inter_point(2) - position(2)) / seg1_num;

@@ -1,6 +1,6 @@
 function PlotPose(pose, figure_x, figure_y)
 
-    hold on;
+%     hold on;
     f_x = figure_x;
     f_y = figure_y;
     
@@ -24,9 +24,8 @@ function PlotPose(pose, figure_x, figure_y)
     line3_x = [p_tmp(1,5), p_tmp(1,6)];
     line3_y = [p_tmp(2,5), p_tmp(2,6)];
     
-    plot(line1_x, line1_y, 'Color', 'k', 'LineWidth', 3.0);
-    plot(line2_x, line2_y, 'Color', 'k', 'LineWidth', 3.0);
-    plot(line3_x, line3_y, 'Color', 'k');
-     
+    plot(line1_x, line1_y, 'Color', 'k', 'LineWidth', 5.5);
+    plot(line2_x, line2_y, 'Color', 'k', 'LineWidth', 5.5);
+    plot(line3_x, line3_y, 'Color', 'k', 'LineWidth', 3.0);
 
 end
